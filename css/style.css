@@ -23,6 +23,7 @@ html {
   line-height: 1;
 }
 
+/*
 ol, ul {
   list-style: none;
 }
@@ -31,20 +32,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+*/
 
+/*
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
+*/
 
+/*
 q, blockquote {
   quotes: none;
 }
+*/
+/*
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
+*/
 
 a img {
   border: none;
@@ -53,26 +61,137 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+blockquote{
+	quotes:"'";
+}
 
 /* COLOURS */
 /* VARIABLES */
 body {
-  padding: 20px;
   background-image: url(../img/donuts.jpg);
+  text-align: center;
 }
-body .container {
+.container {
   width: 670px;
+  min-height:100%;
   margin: 0 auto;
   background-color: white;
   padding: 20px 20px 20px 20px;
 }
-body .container div.header {
-  text-align: center;
+h1{
+	font-size:xx-large;
 }
-body .container div.header h1 {
-  margin-bottom: 20px;
-  font-size: xx-large;
+.header{
+	margin: 0 0 20px 0;
 }
+.main-quote{
+	display:flex;
+	align-content:flex-end;
+}
+.main-quote>img{
+	width:200px;
+	height:200px;
+}
+.quote{
+	padding:20px 0 0 0;
+}
+.quote-container>a{
+	display:block;
+	margin:10px 0 0 0;
+}
+.main-quote>img{
+	width:200px;
+	margin-left:20px;
+}
+iframe{
+	width:100%;
+	height:360px;
+	margin: 10px 0 0 0;
+	frameborder:0;
+}
+.trivia{
+	margin-top:40px;
+	display:flex;
+	text-align: left;
+	justify-content: space-between;
+}
+.trivia>div>span{
+	display: block;
+	width:100%;
+	text-align: center;
+}
+.trivia>div>img{
+	float:left;
+}
+.one{
+	padding:10px 10px 10px 0;
+	text-align: left;
+	width:28.5%;
+}
+.two{
+	width:38%;
+	padding:10px;
+}
+.three{
+	width:32%;
+	padding:10px 0 10px 10px;
+}
+footer{
+	margin:40px 0 0 0;
+	width:100%;
+}
+
+@media (min-width:0) and (max-width:746px){
+	body{
+		padding:5px;
+	}
+	.header{
+		margin:15px 0 20px 0;
+	}
+	.container{
+		margin:0;
+		width:100%;
+		padding:5px;
+		height:auto;
+		width:auto;
+	}
+	.main-quote{
+		flex-direction: column;
+		align-items: center;
+	}
+	.quote-container{
+		order:2;
+		margin:10px 0 15px 0;
+	}
+	.main-quote>img{
+		width:100%;
+		height:auto;
+		margin:0;
+	}
+	.trivia{
+		flex-direction: column;
+		align-items: center;
+	}
+	.one,.two,.three{
+		width:95%;
+		padding:0;
+		margin:0 0 15px 0;
+	}
+	footer{
+		margin:20px 0 20px 0;
+	}
+}
+@media (max-width:500px){
+	iframe{
+		height:250px;
+		width:95%;
+	}
+}
+
+
+
+
+/*
 body .container div p {
   margin-bottom: 20px;
 }
@@ -104,7 +223,7 @@ body .container div.footer p {
   margin-bottom: 10px;
 }
 body .container div.footer div.houses p {
-  margin-left: 20px;
+ 
   height: 1000px;
   display: block;
   position: absolute;
@@ -114,3 +233,4 @@ body .container div.footer div.houses p {
   background-color: red;
   text-align: center;
 }
+*/
